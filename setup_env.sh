@@ -9,6 +9,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # QEMU 관련 설정
 export QEMU_PATH="${SCRIPT_DIR}/qemu"
 export DYLD_LIBRARY_PATH="${QEMU_PATH}:${DYLD_LIBRARY_PATH:-}"
+export PATH="${QEMU_PATH}:${PATH}"
 
 # LLVM 관련 설정
 export LLVM_PATH="${SCRIPT_DIR}/llvm"
